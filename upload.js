@@ -34,6 +34,6 @@ dropzone.ondrop = function(e){
     var $txt = jQuery(dropzone);
         var caretPos = $txt[0].selectionStart;
         var textAreaTxt = $txt.val();
-        var txtToAdd = "[[File:SUSTech_Shenzhen-"+e.dataTransfer.files[0].name+"]]";
+        var txtToAdd = "{{SUSTech_Image | filename=SUSTech_Shenzhen-"+e.dataTransfer.files[0].name+"}}";
         $txt.val(textAreaTxt.substring(0, caretPos) + txtToAdd + textAreaTxt.substring(caretPos) );
 };
